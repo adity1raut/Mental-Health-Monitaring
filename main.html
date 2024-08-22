@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>      
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Mental Health Quiz</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<header id="mainHeader"><h1> MENTAL HEALTH MONITORING</h1></header>
+<div class="question" id="question1">
+    <p>Question 1: Experience little to no interest or pleasure in activities.
+    </p>
+    <div class="container">
+      <div class="btn"><a href="#question2"onclick="addScore(0, 'question1'),showNext('question2')">A) Not at all</a></div>
+      <div class="btn"><a href="#question2" onclick="addScore(5, 'question1'),showNext('question2')">B) Sometimes</a></div>
+      <div class="btn"><a href="#question2" onclick="addScore(10, 'question1'),showNext('question2')">C) Nearly Everyday</a></div>
+    </div>		
+</div>
+<div class="question hidden " id="question2">
+    <p>Question 2: Experience difficulty falling or staying asleep, or oversleeping.
+    </p>
+    <div class="container">
+      <div class="btn"><a href="#question3"onclick="addScore(0, 'question2'),showNext('question3')">A) Not at all</a></div>
+      <div class="btn"><a href="#question3" onclick="addScore(5, 'question2'),showNext('question3')">B) Sometimes</a></div>
+      <div class="btn"><a href="#question3" onclick="addScore(10, 'question2'),showNext('question3')">C) Nearly Everyday</a></div>
+    </div>		
+</div>
+</div>
+<div class="question hidden" id="question3">
+    <p>Question 3: Experience poor appetite or overeating habits.
+    </p>
+    <div class="container">
+      <div class="btn"><a href="#question4" onclick="addScore(0, 'question3'),showNext('question4')">A) Not at all</a></div>
+      <div class="btn"><a href="#question4" onclick="addScore(5, 'question3'),showNext('question4')">B) Sometimes</a></div>
+      <div class="btn"><a href="#question4" onclick="addScore(10, 'question3'),showNext('question4')">C) Nearly Everyday</a></div>
+    </div>		
+</div>
+</div>
+<div class="question hidden" id="question4">
+  <p>Question 4:Have thoughts of self-harm crossed your mind?
+  </p>
+  <div class="container">
+    <div class="btn"><a href="#question5"onclick="addScore(0, 'question4'),showNext('question5')">A) Not at all</a></div>
+    <div class="btn"><a href="#question5" onclick="addScore(5, 'question4'),showNext('question5')">B) Sometimes</a></div>
+    <div class="btn"><a href="#question5" onclick="addScore(10, 'question4'),showNext('question5')">C) Nearly Everyday</a></div>
+  </div>		
+</div>
+<div class="question hidden" id="question5">
+  <p>Question 5:Experience thoughts of being better off dead. </p>
+  <div class="container">
+    <div class="btn"><a href="#question6"onclick="addScore(0, 'question5'),showNext('question6')">A) Not at all</a></div>
+    <div class="btn"><a href="#question6" onclick="addScore(5, 'question5'),showNext('question6')">B) Sometimes</a></div>
+    <div class="btn"><a href="#question6" onclick="addScore(10, 'question5'),showNext('question6')">C) Nearly Everyday</a></div>
+  </div>		
+</div>
+<div class="question hidden" id="question6">
+  <p>Question 6: Experience difficulty concentrating on tasks, such as reading or watching television.</p>
+  <div class="container">
+    <div class="btn"><a href="#question7"onclick="addScore(0, 'question6'),showNext('question7')">A) Not at all</a></div>
+    <div class="btn"><a href="#question7" onclick="addScore(5, 'question6'),showNext('question7')">B) Sometimes</a></div>
+    <div class="btn"><a href="#question7" onclick="addScore(10, 'question6'),showNext('question7')">C) Nearly Everyday</a></div>
+  </div>		
+</div>
+<div class="question hidden" id="question7">
+  <p>Question 7: Do you often feel like you need someone to talk to?</p>
+  <div class="container">
+    <div class="btn"><a href="#question8"onclick="addScore(0, 'question7'),showNext('question8')">A) Not at all</a></div>
+    <div class="btn"><a href="#question8" onclick="addScore(5, 'question7'),showNext('question8')">B) Sometimes</a></div>
+    <div class="btn"><a href="#question8" onclick="addScore(10, 'question7'),showNext('question8')">C) Nearly Everyday</a></div>
+  </div>		
+</div>
+<div class="question hidden" id="question8">
+  <p>Question 8: Experience excessive worrying about various matters.
+  </p>
+  <div class="container">
+    <div class="btn"><a href="#question9"onclick="addScore(0, 'question8'),showNext('question9')">A) Not at all</a></div>
+    <div class="btn"><a href="#question9" onclick="addScore(5, 'question8'),showNext('question9')">B) Sometimes</a></div>
+    <div class="btn"><a href="#question9" onclick="addScore(10, 'question8'),showNext('question9')">C) Nearly Everyday</a></div>
+  </div>		
+</div>
+<div class="question hidden" id="question9">
+  <p>Question 9: Become easily annoyed or irritable.</p>
+  <div class="container">
+    <div class="btn"><a href="#question10"onclick="addScore(0, 'question9'),showNext('question10')">A) Not at all</a></div>
+    <div class="btn"><a href="#question10" onclick="addScore(5, 'question9'),showNext('question10')">B) Sometimes</a></div>
+    <div class="btn"><a href="#question10" onclick="addScore(10, 'question9'),showNext('question10')">C) Nearly Everyday</a></div>
+  </div>		
+</div>
+<div class="question hidden" id="question10">
+  <p>Question 10:  How frequently do you find it hard to focus on what people are saying to you, even when they're speaking directly to you?
+  </p>
+  <div class="container">
+    <div class="btn"><a href="#question11"onclick="addScore(0, 'question10'),showNext('question11')">A) Not at all</a></div>
+    <div class="btn"><a href="#question11" onclick="addScore(5, 'question10'),showNext('question11')">B) Sometimes</a></div>
+    <div class="btn"><a href="#question11" onclick="addScore(10, 'question10'),showNext('question11')">C) Nearly Everyday</a></div>
+  </div>		
+</div>
+</div>
+<div class="question hidden" id="question11">
+  <p>Question 11: Have you felt emotionally numb or disconnected from people, activities, or your environment?
+  </p>
+  <div class="container">
+    <div class="btn"><a href="#question12"onclick="addScore(0, 'question11'),showNext('question12')">A) Not at all</a></div>
+    <div class="btn"><a href="#question12" onclick="addScore(5, 'question11'),showNext('question12')">B) Sometimes</a></div>
+    <div class="btn"><a href="#question12" onclick="addScore(10, 'question11'),showNext('question12')">C) Nearly Everyday</a></div>
+  </div>		
+</div>
+</div>
+<div class="question hidden" id="question12">
+  <p>Question 12: Have you experienced feelings of guilt or persistent blame toward yourself or others for past events or any subsequent problems?
+  </p>
+  <div class="container">
+    <div class="btn"><a href="#question13"onclick="addScore(0, 'question12'),showNext('question13')">A) Not at all</a></div>
+    <div class="btn"><a href="#question13" onclick="addScore(5, 'question12'),showNext('question13')">B) Sometimes</a></div>
+    <div class="btn"><a href="#question13" onclick="addScore(10, 'question12'),showNext('question13')">C) Nearly Everyday</a></div>
+  </div>		
+</div>
+</div>
+<div class="question hidden" id="question13">
+  <p>Question 13: Prefer spending more time alone.
+  </p>
+  <div class="container">
+    <div class="btn"><a href="#question14"onclick="addScore(0, 'question13'),showNext('question14')">A) Not at all</a></div>
+    <div class="btn"><a href="#question14" onclick="addScore(5, 'question13'),showNext('question14')">B) Sometimes</a></div>
+    <div class="btn"><a href="#question14" onclick="addScore(10, 'question13'),showNext('question14')">C) Nearly Everyday</a></div>
+  </div>		
+</div>
+</div>
+<div class="question hidden" id="question14">
+  <p>Question 14: Show less interest in socializing with friends.
+  </p>
+  <div class="container">
+    <div class="btn"><a href="#question15"onclick="addScore(0, 'question14'),showNext('question15')">A) Not at all</a></div>
+    <div class="btn"><a href="#question15" onclick="addScore(5, 'question14'),showNext('question15')">B) Sometimes</a></div>
+    <div class="btn"><a href="#question15" onclick="addScore(10, 'question14'),showNext('question15')">C) Nearly Everyday</a></div>
+  </div>		
+</div>
+</div>
+<div class="question hidden" id="question15">
+  <p>Question 15: Have you felt sad, miserable, or excluded?
+  </p>
+  <div class="container">
+    <div class="btn"><a href="#score"onclick="addScore(0, 'question15'),showNext('score')">A) Not at all</a></div>
+    <div class="btn"><a href="#score" onclick="addScore(5, 'question15'),showNext('score')">B) Sometimes</a></div>
+    <div class="btn"><a href="#score" onclick="addScore(10, 'question15'),showNext('score')">C) Nearly Everyday</a></div>
+  </div>		
+ </div>
+<div id="score" class="hidden" >
+  <p>Total Score:150</p>
+  <p>Total Score: <span id="totalScore">0</span></p>
+  <button class="btn1 v1" onclick="openWebsite()">Submit Your Score</button>
+</div>
+<footer>
+   Submited by Exploration Group no 2 !
+</footer>
+<script src="script.js"></script>
+</body>
+</html>

@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="page.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+    />
+  </head>
+  <body>
+    <div class="contain">
+      <div class="congrats">
+        <h1>Congrat<span class="hide">ulation</span>s !</h1>
+        
+            <img class="image" src="Congratulations Letter Vector Art PNG, Congratulations Lettering Transparent Background, Congratulations, Sticker, Background PNG Image For Free Download.jpeg" >
+        <div class="text">
+          <p>
+            Based on your responses, it appears that you possess a healthy state of mind .<br>
+            Take pride in your well-being and continue to take care for yourself.
+          </p>
+          <button onclick=" window.location.href = 'main.html';"> Back to Quiz !</button>
+        </div>
+      </div>
+      
+    </div>
+
+    <script>
+      $(window).on("load", function () {
+        setTimeout(function () {
+          $(".done").addClass("drawn");
+        }, 500);
+      });
+    </script>
+  </body>
+</html>
